@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff7e5f" />
+      <stop offset="50%" stop-color="#feb47b" />
+      <stop offset="100%" stop-color="#ffeccc" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1280" fill="url(#bg3)"/>
+  <circle cx="360" cy="420" r="140" fill="#fff" opacity="0.4"/>
+  <text x="360" y="480" font-size="110" text-anchor="middle">🌊</text>
+  <text x="360" y="580" font-size="70" text-anchor="middle">🌅 🕊️</text>
+  <rect x="120" y="720" width="480" height="200" rx="24" fill="rgba(255,255,255,0.7)"/>
+  <text x="360" y="800" font-size="36" font-weight="bold" fill="#742a2a" text-anchor="middle" font-family="-apple-system, sans-serif">海邊夕陽步道</text>
+  <text x="360" y="860" font-size="26" fill="#dd6b20" text-anchor="middle" font-family="-apple-system, sans-serif">風很溫柔，妳也是 🌾</text>
+</svg>

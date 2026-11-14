@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff758c" />
+      <stop offset="100%" stop-color="#ff7eb3" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1280" fill="url(#bg5)"/>
+  <circle cx="360" cy="460" r="180" fill="rgba(255,255,255,0.3)"/>
+  <text x="360" y="470" font-size="120" text-anchor="middle">🎂</text>
+  <text x="360" y="580" font-size="60" text-anchor="middle">💯 ❤️ 💌</text>
+  <rect x="100" y="710" width="520" height="220" rx="24" fill="rgba(255,255,255,0.85)"/>
+  <text x="360" y="790" font-size="44" font-weight="bold" fill="#9b2c2c" text-anchor="middle" font-family="-apple-system, sans-serif">第 100 天快樂！</text>
+  <text x="360" y="855" font-size="28" fill="#e53e3e" text-anchor="middle" font-family="-apple-system, sans-serif">2026.11.20 我們的里程碑 💕</text>
+</svg>

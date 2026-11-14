@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Chiikawa Usagi 正版比例高精細向量 -->
+  <defs>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#8c7042" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <g filter="url(#softGlow)">
+    <!-- 圓潤身軀與頭部一體成型 (正版烏薩奇經典梨形饅頭身材) -->
+    <!-- 左耳 -->
+    <path d="M 75 75 C 68 15, 45 10, 60 70 Z" fill="#fff4ad" stroke="#38281f" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 66 60 C 64 35, 55 30, 62 58" stroke="#ffb8c6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- 右耳 -->
+    <path d="M 125 75 C 132 15, 155 10, 140 70 Z" fill="#fff4ad" stroke="#38281f" stroke-width="3.5" stroke-linejoin="round"/>
+    <path d="M 134 60 C 136 35, 145 30, 138 58" stroke="#ffb8c6" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- 圓圓小手 (左手微舉) -->
+    <ellipse cx="48" cy="125" rx="10" ry="8" fill="#fff4ad" stroke="#38281f" stroke-width="3.5" transform="rotate(-20 48 125)"/>
+    <!-- 右手 -->
+    <ellipse cx="152" cy="125" rx="10" ry="8" fill="#fff4ad" stroke="#38281f" stroke-width="3.5" transform="rotate(20 152 125)"/>
+
+    <!-- 身體主體 -->
+    <ellipse cx="100" cy="120" rx="56" ry="50" fill="#fff5be" stroke="#38281f" stroke-width="4"/>
+
+    <!-- 小雙腳 -->
+    <ellipse cx="78" cy="166" rx="11" ry="8" fill="#fff4ad" stroke="#38281f" stroke-width="3.5"/>
+    <ellipse cx="122" cy="166" rx="11" ry="8" fill="#fff4ad" stroke="#38281f" stroke-width="3.5"/>
+
+    <!-- 圓圓純黑大眼睛 (帶經典小高光) -->
+    <ellipse cx="78" cy="112" rx="5.5" ry="7" fill="#261b18"/>
+    <circle cx="76.5" cy="109.5" r="2.2" fill="#ffffff"/>
+
+    <ellipse cx="122" cy="112" rx="5.5" ry="7" fill="#261b18"/>
+    <circle cx="120.5" cy="109.5" r="2.2" fill="#ffffff"/>
+
+    <!-- 圓形粉嫩腮紅 -->
+    <ellipse cx="62" cy="124" rx="9" ry="6" fill="#ff8da1" opacity="0.85"/>
+    <ellipse cx="138" cy="124" rx="9" ry="6" fill="#ff8da1" opacity="0.85"/>
+
+    <!-- 經典微笑/微張三角形嘴巴 (烏薩奇精髓表情) -->
+    <path d="M 93 118 Q 100 122 107 118" fill="none" stroke="#38281f" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 94 120 Q 100 134 106 120 Z" fill="#eb4d4b" stroke="#38281f" stroke-width="2.5"/>
+  </g>
+</svg>

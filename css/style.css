@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,500&display=swap');
+
+:root {
+  --primary-pink: #ff6b8b;
+  --soft-pink: #fdf2f4;
+  --rose-gold: #c59b9b;
+  --wax-red: #c0392b;
+  --wax-shadow: #8e1b10;
+}
+
+body {
+  font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #fff5f7 0%, #fef0f2 50%, #f8eaec 100%);
+  min-height: 100vh;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive, 'Noto Sans TC';
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', serif, 'Noto Sans TC';
+}
+
+/* 3D 信封開合動畫 */
+.envelope-wrapper {
+  perspective: 1000px;
+}
+
+.envelope {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  background: #f7dcdb;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 20px 40px rgba(220, 140, 150, 0.28);
+  transition: transform 0.6s ease;
+}
+
+.envelope-front {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 160px solid #f2cac9;
+  border-right: 160px solid #f2cac9;
+  border-bottom: 120px solid #ecc0bf;
+  border-top: 100px solid transparent;
+  border-radius: 0 0 12px 12px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.envelope-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 125px solid #eab7b6;
+  transform-origin: top center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 4;
+}
+
+.envelope.open .envelope-flap {
+  transform: rotateX(180deg);
+  z-index: 1;
+}
+
+.letter-paper {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 280px;
+  height: 190px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.envelope.open .letter-paper {
+  transform: translateY(-130px);
+}
+
+/* 火漆印章 */
+.wax-seal {
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px;
+  height: 68px;
+  background: radial-gradient(circle at 35% 35%, #e74c3c, #c0392b 65%, #962d22 100%);
+  border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(150, 45, 34, 0.45), inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: seal-pulse 2s infinite ease-in-out;
+}
+
+.wax-seal:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 12px 25px rgba(150, 45, 34, 0.6);
+}
+
+.wax-seal-inner {
+  width: 50px;
+  height: 50px;
+  border: 2px dashed rgba(255, 215, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  letter-spacing: 1px;
+}
+
+@keyframes seal-pulse {
+  0%, 100% { box-shadow: 0 8px 18px rgba(150, 45, 34, 0.45); }
+  50% { box-shadow: 0 8px 26px rgba(231, 76, 60, 0.75); }
+}
+
+/* 拍立得卡片 */
+.polaroid-card {
+  background: #ffffff;
+  padding: 12px 12px 24px 12px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px -5px rgba(180, 130, 140, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+}
+
+.polaroid-card:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  box-shadow: 0 20px 35px -5px rgba(220, 120, 140, 0.35);
+  z-index: 10;
+}
+
+/* 黑膠唱片旋轉 */
+.vinyl-record {
+  animation: spin-slow 8s linear infinite;
+}
+
+.vinyl-paused {
+  animation-play-state: paused;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 漂浮愛心動畫 */
+.floating-heart {
+  position: absolute;
+  pointer-events: none;
+  animation: floatUp 2.5s ease-out forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(0.6) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-80px) scale(1.2) rotate(15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-180px) scale(0.8) rotate(-20deg);
+  }
+}
+
+/* 刮刮卡 Canvas */
+.scratch-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  user-select: none;
+}
+
+.scratch-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+  z-index: 2;
+  touch-action: none;
+}
+
+/* IG 限動進度條 */
+.story-progress-bar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 9999px;
+  overflow: hidden;
+  flex: 1;
+}
+
+.story-progress-fill {
+  height: 100%;
+  background: #ffffff;
+  width: 0%;
+  transition: width 0.05s linear;
+}
+
+.story-progress-fill.completed {
+  width: 100%;
+}
+
+/* 心動按鈕呼吸跳動動畫 */
+.pulse-heart-btn {
+  animation: pulse-heart 1.6s infinite ease-in-out;
+}
+
+@keyframes pulse-heart {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 25px rgba(255, 107, 139, 0.4);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 14px 35px rgba(255, 107, 139, 0.65);
+  }
+}
+
+/* 悄悄話彈窗浮動效果 */
+.whisper-bubble {
+  animation: whisper-pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes whisper-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.85) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* 🌙 晚安星空模式 */
+body.night-mode {
+  background: linear-gradient(135deg, #090c1b 0%, #11152e 50%, #181938 100%);
+  color: #e2e8f0;
+}
+
+body.night-mode header {
+  background: rgba(16, 20, 42, 0.85) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.night-mode .bg-white\/80,
+body.night-mode .bg-white\/70,
+body.night-mode .bg-white\/60,
+body.night-mode .bg-white {
+  background: rgba(26, 31, 62, 0.82) !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  color: #e2e8f0 !important;
+}
+
+body.night-mode h1, 
+body.night-mode h2, 
+body.night-mode h3, 
+body.night-mode h4,
+body.night-mode .text-gray-800 {
+  color: #f8fafc !important;
+}
+
+body.night-mode .text-gray-700,
+body.night-mode .text-gray-600 {
+  color: #cbd5e1 !important;
+}
+
+body.night-mode .text-gray-500,
+body.night-mode .text-gray-400 {
+  color: #94a3b8 !important;
+}
+
+body.night-mode .polaroid-card {
+  background: #1e2444 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+}
+
+body.night-mode #star-canvas {
+  opacity: 1;
+}
+
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}

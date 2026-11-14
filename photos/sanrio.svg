@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Sanrio Cinnamoroll 大耳狗 正版經典大耳朵藍眼造形 -->
+  <defs>
+    <filter id="softGlow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#7090b0" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#softGlow2)">
+    <!-- 圓圓白身體 -->
+    <ellipse cx="100" cy="138" rx="42" ry="32" fill="#ffffff" stroke="#4a5568" stroke-width="3.5"/>
+    
+    <!-- 經典大波浪長耳朵 (左) -->
+    <path d="M 68 98 C 30 92, 5 110, 8 135 C 10 150, 35 152, 55 130 C 65 118, 70 108, 68 98 Z" fill="#ffffff" stroke="#4a5568" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- 經典大波浪長耳朵 (右) -->
+    <path d="M 132 98 C 170 92, 195 110, 192 135 C 190 150, 165 152, 145 130 C 135 118, 130 108, 132 98 Z" fill="#ffffff" stroke="#4a5568" stroke-width="3.5" stroke-linejoin="round"/>
+
+    <!-- 扁圓形純白大頭部 -->
+    <ellipse cx="100" cy="104" rx="55" ry="38" fill="#ffffff" stroke="#4a5568" stroke-width="4"/>
+
+    <!-- 小雙手 -->
+    <ellipse cx="78" cy="136" rx="7" ry="6" fill="#ffffff" stroke="#4a5568" stroke-width="3"/>
+    <ellipse cx="122" cy="136" rx="7" ry="6" fill="#ffffff" stroke="#4a5568" stroke-width="3"/>
+    <!-- 小短腿 -->
+    <ellipse cx="86" cy="166" rx="8" ry="6" fill="#ffffff" stroke="#4a5568" stroke-width="3"/>
+    <ellipse cx="114" cy="166" rx="8" ry="6" fill="#ffffff" stroke="#4a5568" stroke-width="3"/>
+
+    <!-- 正版大耳狗招牌清澈水藍色眼睛 -->
+    <ellipse cx="80" cy="100" rx="5" ry="6.5" fill="#2b82d9"/>
+    <circle cx="78.5" cy="98" r="2" fill="#ffffff"/>
+
+    <ellipse cx="120" cy="100" rx="5" ry="6.5" fill="#2b82d9"/>
+    <circle cx="118.5" cy="98" r="2" fill="#ffffff"/>
+
+    <!-- 圓圓粉紅腮紅 (大耳狗標誌) -->
+    <ellipse cx="66" cy="108" rx="8.5" ry="5.5" fill="#ff99bb" opacity="0.85"/>
+    <ellipse cx="134" cy="108" rx="8.5" ry="5.5" fill="#ff99bb" opacity="0.85"/>
+
+    <!-- W型小微笑嘴嘴 -->
+    <path d="M 94 106 Q 97 110 100 106 Q 103 110 106 106" fill="none" stroke="#4a5568" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- 頭頂小粉紅蝴蝶結 -->
+    <g transform="translate(93, 68)">
+      <circle cx="7" cy="7" r="4.5" fill="#ff6b8b"/>
+      <path d="M 4 7 C -4 0, -4 14, 4 7 Z" fill="#ff8da1"/>
+      <path d="M 10 7 C 18 0, 18 14, 10 7 Z" fill="#ff8da1"/>
+    </g>
+  </g>
+</svg>

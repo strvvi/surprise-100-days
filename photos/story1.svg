@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fad0c4" />
+      <stop offset="50%" stop-color="#ffd1ff" />
+      <stop offset="100%" stop-color="#fbc2eb" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1280" fill="url(#bg1)"/>
+  <circle cx="360" cy="500" r="180" fill="rgba(255,255,255,0.25)"/>
+  <text x="360" y="480" font-size="120" text-anchor="middle">✨</text>
+  <text x="360" y="580" font-size="90" text-anchor="middle">👩‍❤️‍👨</text>
+  <rect x="120" y="720" width="480" height="200" rx="24" fill="rgba(255,255,255,0.7)"/>
+  <text x="360" y="800" font-size="38" font-weight="bold" fill="#4a5568" text-anchor="middle" font-family="-apple-system, sans-serif">2026.08.12</text>
+  <text x="360" y="860" font-size="28" fill="#e53e3e" text-anchor="middle" font-family="-apple-system, sans-serif">Day 1 • 故事的起點 ❤️</text>
+</svg>
