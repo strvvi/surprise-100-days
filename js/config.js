@@ -1,6 +1,6 @@
 /**
  * 100 天紀念驚喜網站 - 設定檔
- * 日期已精準更新為真實限動日期 (共 24 部)
+ * 日期已精準更新為真實限動日期 (共 25 部)
  */
 const CONFIG = {
   // 兩人的名字
@@ -20,7 +20,7 @@ const CONFIG = {
   // 浪漫名言 / 首頁標題
   quote: "遇見妳之後，平凡的每一天都成了值得紀念的浪漫。",
 
-  // IG 限時動態資料庫 (共 24 部影片，精準對應真實發布日期)
+  // IG 限時動態資料庫 (共 25 部影片，精準對應真實發布日期)
   stories: [
     {
       id: 1,
@@ -30,7 +30,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "初秋的美味約會 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "兩人的晚餐時光 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 3,
@@ -50,7 +50,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "心動的日常 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "甜蜜微醺時刻 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 5,
@@ -70,7 +70,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "公館雪花冰約會 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 6,
@@ -80,7 +80,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "牽手吹風的日子 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 7,
@@ -90,7 +90,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "專屬彼此的節奏 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 8,
@@ -100,7 +100,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "甜甜的陪伴 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 9,
@@ -110,7 +110,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "有妳在就是風景 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 10,
@@ -120,7 +120,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "秋高氣爽的散步 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 11,
@@ -130,7 +130,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "一起吃甜甜 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 12,
@@ -140,7 +140,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "藏在眼裡的溫柔 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 13,
@@ -150,7 +150,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "每一刻都想記錄 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 14,
@@ -160,7 +160,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "儀式感的禮物 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 15,
@@ -170,7 +170,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "屬於我們的默契 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 16,
@@ -180,7 +180,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "生活中的小確幸 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 17,
@@ -190,7 +190,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "牽手漫步的街頭 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 18,
@@ -200,7 +200,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "妳笑起來最美 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 19,
@@ -210,7 +210,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "想去哪都陪妳 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 20,
@@ -220,7 +220,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "幸福的約會時光 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 21,
@@ -230,7 +230,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "最放鬆的時刻 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 22,
@@ -240,7 +240,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "微涼秋天的溫暖 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 23,
@@ -250,7 +250,7 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "走過無數條街 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
     },
     {
       id: 24,
@@ -260,7 +260,17 @@ const CONFIG = {
       location: "我們的回憶足跡 📍",
       caption: "烏薩奇與三麗鷗相聚 ✨ 走過的每一天都有妳的笑容。",
       likes: "520",
-      avatar: "photos/avatar.svg"
+      avatar: "photos/momonga_avatar.png"
+    },
+    {
+      id: 25,
+      media: "photos/20d5d8d0e45a4d269c32b788dafca51c.MOV",
+      type: "video",
+      date: "11月18日",
+      location: "午後窗邊特調 🍹",
+      caption: "每一天都要一起喝好喝的，每一口都是甜甜的滋味 ✨",
+      likes: "520",
+      avatar: "photos/momonga_avatar.png"
     }
   ],
 
@@ -313,6 +323,12 @@ const CONFIG = {
       title: "烏薩奇與三麗鷗相聚",
       date: "2026.11.14",
       rotate: "4deg"
+    },
+    {
+      media: "photos/20d5d8d0e45a4d269c32b788dafca51c.MOV",
+      title: "午後窗邊特調",
+      date: "2026.11.18",
+      rotate: "3deg"
     }
   ],
 
@@ -355,11 +371,13 @@ const CONFIG = {
     content: [
       "親愛的 萌萌純純大壞咪：",
       "不知不覺，我們居然一起走過 100 天了。",
-      "其實早在 8 月 12 號我們正式在一起之前，在那個滿天星空下緊緊抱住妳的那一刻，我的心就已經完全被妳拿走了。那一晚的夜風、還有靠在妳身邊的心跳聲，直到現在我都還記得很清楚。",
-      "雖然 8 月 12 號那天我在日本，我們沒能見到面，只能抱著手機跟彼此說著心裡話，但那天看著螢幕傻笑的我，心裡比任何時候都還要確定，總有一天，我想好好牽住這個女孩的手，帶她在世界到處遊玩。",
-      "回頭翻看這段日子的限動，真的滿滿都是我們的回憶。記得九月初我們跑去吃魚君的海鮮丼、隔天又一起去吃義大利麵；還有大熱天一起跑去公館 Mr.雪腐吃那碗像小山一樣的芒果冰；十月中我送妳的那個充滿儀式感的禮物，到現在想起來心裡還是暖暖的；一直到最近我們窩在咖啡廳裡，桌上擺著飲料、妳的大耳狗酷洛米、還有我的烏薩奇……",
-      "這些看似平常的小事，有妳在身邊，就全部變成了閃閃發光的回憶。跟妳在一起的時候，時間總是過得特別快，每次要送妳回家的時候我都超級捨不得。",
+      "其實早在 8 月 12 號我們正式在一起之前，在那個滿天星空下緊緊抱住妳的那一刻，我的心就已經完全被妳偷走了。那一晚的夜風、還有靠在妳身邊的心跳聲，直到現在我都還記得很清楚。",
+      "雖然 8 月 12 號那天我在日本，我們沒能見到面，只能抱著手機跟彼此說著心裡話，但那天看著螢幕傻笑的我，心裡比任何時候都還要確定，總有一天，我會好好牽住這個女孩的手，帶她在世界到處遊玩。",
+      "回頭翻看這段日子的限動，真的滿滿都是我們的回憶。記得九月初我們跑去信義區玩、隔天又一起去敦化吃義大利麵；還有大熱天一起跑去公館吃芒果冰；十月中我送妳的那個充滿儀式感的手鏈，有好好帶者吧，到現在想起來心裡還是暖暖的；一直到最近我們窩在咖啡廳裡，桌上擺著飲料、妳的大耳狗、還有烏薩奇，每天都好萌萌呢",
+      "這些看似平常的小事，有妳在身邊，就全部變成了閃閃發光的回憶。跟妳在一起的時候，時間總是過得特別快，每次要送妳回家的時候我總是捨不得。",
       "儘管在這之中，我們有不少次爭吵，但我們都走過來了呢，也沒想到時光荏苒，歲月如梭，我們默默地陪伴了彼此100天了呢",
+      "只是最近很忙，想必萌萌小公主一定都覺得男朋友怎麼都不怎麼陪了對吧，但是說真的，男朋友真的非常非常愛萌萌咪呢！",
+      "每次捉弄萌萌咪都是因為很愛萌萌咪，覺得小公主生氣的樣子很可愛呢",
       "謝謝妳這 100 天以來的陪伴跟包容，謝謝妳走進我的生活，讓我每天都有了最期待見到的人。",
       "100 天只是一個小小的里程碑，未來的每一個日子，不管是一起去吃好吃的、一起發呆、或是妳需要我教學解惑的時候，我都一定會在妳身邊。",
       "第 100 天快樂，我的萌萌小公主。我愛妳！"
