@@ -240,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScratchCards();
   initLoveLetter();
   renderPolaroids();
+  if (window.initPrivacyMode) initPrivacyMode();
   if (window.initHeartWhispers) initHeartWhispers();
   if (window.initCoupleQuiz) initCoupleQuiz();
   if (window.initNightMode) initNightMode();

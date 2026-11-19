@@ -49,7 +49,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/style.css?v=20261118_v3">
+  <link rel="stylesheet" href="css/style.css?v=20261120_v4">
 </head>
 <body class="text-gray-800 antialiased selection:bg-rose-200">
 
@@ -65,9 +65,9 @@
     </button>
     <!-- 可愛小貼圖裝飾 -->
     <div class="flex items-center gap-3 mb-3">
-      <img src="photos/usagi.png?v=20261118_v3" alt="Sticker" class="w-10 h-10 drop-shadow-sm hover:scale-110 transition-transform">
+      <img src="photos/usagi.png?v=20261120_v4" alt="Sticker" class="w-10 h-10 drop-shadow-sm hover:scale-110 transition-transform">
       <span class="text-rose-400 text-lg">❤️</span>
-      <img src="photos/momonga_avatar.png?v=20261118_v3" alt="Momonga" class="w-10 h-10 rounded-full border border-rose-200 drop-shadow-sm hover:scale-110 transition-transform object-cover">
+      <img src="photos/momonga_avatar.png?v=20261120_v4" alt="Momonga" class="w-10 h-10 rounded-full border border-rose-200 drop-shadow-sm hover:scale-110 transition-transform object-cover">
     </div>
 
     <div class="text-center mb-8">
@@ -128,6 +128,11 @@
           <!-- 🐰 喚醒烏薩奇按鈕 (收起後顯示) -->
           <button id="summon-usagi-btn" class="hidden flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 hover:bg-amber-100 rounded-full border border-amber-200 transition-all text-xs text-amber-700 shadow-sm">
             <span>🐾 喚醒小可愛們 (烏薩奇 & 小桃)</span>
+          </button>
+
+          <!-- 🔒 付費解鎖隱私模式切換按鈕 -->
+          <button id="privacy-toggle-btn" class="flex items-center gap-1.5 px-3 py-1.5 bg-amber-50 hover:bg-amber-100 rounded-full border border-amber-200 transition-all text-xs text-amber-700 shadow-sm" title="切換付費解鎖隱私模式（隱藏姓名與天數）">
+            <span id="privacy-toggle-text">🔒 付費解鎖模式</span>
           </button>
 
           <!-- 🌙 晚安星空浪漫模式切換按鈕 -->
@@ -307,11 +312,11 @@
       <section class="mb-16">
         <div class="bg-white rounded-3xl p-8 border border-rose-100 shadow-sm text-center relative overflow-hidden">
           <div class="flex items-center justify-center gap-2 mb-3">
-            <img src="photos/usagi.png?v=20261118_v3" class="w-8 h-8 opacity-90" alt="Sticker">
+            <img src="photos/usagi.png?v=20261120_v4" class="w-8 h-8 opacity-90" alt="Sticker">
             <div class="w-12 h-12 bg-rose-100 text-rose-500 rounded-full flex items-center justify-center">
               <i data-lucide="mail-heart" class="w-6 h-6"></i>
             </div>
-            <img src="photos/momonga_avatar.png?v=20261118_v3" class="w-8 h-8 rounded-full border border-rose-200 opacity-90 object-cover" alt="Momonga">
+            <img src="photos/momonga_avatar.png?v=20261120_v4" class="w-8 h-8 rounded-full border border-rose-200 opacity-90 object-cover" alt="Momonga">
           </div>
 
           <h3 class="text-2xl font-bold text-gray-800 mb-2">最後，有一封信想給 萌萌咪</h3>
@@ -328,9 +333,9 @@
       <!-- 頁尾 -->
       <footer class="text-center text-xs text-gray-400 py-6 border-t border-rose-100 flex flex-col items-center justify-center gap-1.5">
         <div class="flex items-center gap-2">
-          <img src="photos/usagi.png?v=20261118_v3" class="w-5 h-5 opacity-70">
+          <img src="photos/usagi.png?v=20261120_v4" class="w-5 h-5 opacity-70">
           <span>Made with all my love ❤️ for Mimi by Vixus</span>
-          <img src="photos/momonga_avatar.png?v=20261118_v3" class="w-5 h-5 rounded-full opacity-70 object-cover">
+          <img src="photos/momonga_avatar.png?v=20261120_v4" class="w-5 h-5 rounded-full opacity-70 object-cover">
         </div>
         <p class="text-[11px] text-gray-400">2026.08.12 - 2026.11.20 • Happy 100 Days Anniversary</p>
       </footer>
@@ -350,7 +355,7 @@
 
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2.5">
-            <img id="story-avatar" src="photos/momonga_avatar.png?v=20261118_v3" alt="Avatar" class="w-9 h-9 rounded-full border border-white/50 object-cover bg-rose-100">
+            <img id="story-avatar" src="photos/momonga_avatar.png?v=20261120_v4" alt="Avatar" class="w-9 h-9 rounded-full border border-white/50 object-cover bg-rose-100">
             <div>
               <div class="flex items-center gap-1.5">
                 <span class="text-white text-xs font-semibold">our_100days</span>
@@ -419,9 +424,9 @@
 
       <div class="text-center mb-6 pt-2">
         <div class="flex items-center justify-center gap-2 mb-1">
-          <img src="photos/usagi.png?v=20261118_v3" class="w-7 h-7">
+          <img src="photos/usagi.png?v=20261120_v4" class="w-7 h-7">
           <span class="text-xl">💌</span>
-          <img src="photos/momonga_avatar.png?v=20261118_v3" class="w-7 h-7 rounded-full border border-rose-200 object-cover">
+          <img src="photos/momonga_avatar.png?v=20261120_v4" class="w-7 h-7 rounded-full border border-rose-200 object-cover">
         </div>
         <h3 id="letter-title" class="text-2xl font-bold text-gray-800 mt-1 font-serif-title">給最親愛的 萌萌純純大壞咪</h3>
         <p id="letter-subtitle" class="text-xs text-rose-500 tracking-wider mt-1">寫在我們相愛的第 100 天</p>
@@ -452,15 +457,16 @@
 
 
   <!-- 載入腳本 (加入 v2 強制快取更新，保證手機/電腦立即取得最新版) -->
-  <script src="js/config.js?v=20261118_v3"></script>
-  <script src="js/counter.js?v=20261118_v3"></script>
-  <script src="js/envelope.js?v=20261118_v3"></script>
-  <script src="js/story.js?v=20261118_v3"></script>
-  <script src="js/scratch.js?v=20261118_v3"></script>
-  <script src="js/whisper.js?v=20261118_v3"></script>
-  <script src="js/quiz.js?v=20261118_v3"></script>
-  <script src="js/night.js?v=20261118_v3"></script>
-  <script src="js/pet.js?v=20261118_v3"></script>
-  <script src="js/main.js?v=20261118_v3"></script>
+  <script src="js/config.js?v=20261120_v4"></script>
+  <script src="js/counter.js?v=20261120_v4"></script>
+  <script src="js/envelope.js?v=20261120_v4"></script>
+  <script src="js/story.js?v=20261120_v4"></script>
+  <script src="js/scratch.js?v=20261120_v4"></script>
+  <script src="js/whisper.js?v=20261120_v4"></script>
+  <script src="js/quiz.js?v=20261120_v4"></script>
+  <script src="js/night.js?v=20261120_v4"></script>
+  <script src="js/pet.js?v=20261120_v4"></script>
+  <script src="js/privacy.js?v=20261120_v4"></script>
+  <script src="js/main.js?v=20261120_v4"></script>
 </body>
 </html>

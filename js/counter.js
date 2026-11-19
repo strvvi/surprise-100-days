@@ -1,5 +1,5 @@
 /**
- * 紀念日與 100 天即時計時器
+ * 紀念日與 100 天即時計時器 (支援付費解鎖隱私模式)
  */
 function initDayCounter() {
   const daysEl = document.getElementById('counter-days');
@@ -23,18 +23,30 @@ function initDayCounter() {
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
 
-    if (daysEl) daysEl.textContent = days;
+    if (daysEl) {
+      if (window.isPrivacyMode) {
+        daysEl.innerHTML = '<span class="paywall-tag cursor-pointer text-lg sm:text-2xl text-amber-600 font-extrabold select-none" title="點擊查看解鎖條件">🔒 付費解鎖</span>';
+      } else {
+        daysEl.textContent = days;
+      }
+    }
     if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
     if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
     if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
 
-    // 計算 100 天進度百分比
+    // 計算進度百分比
     const totalDuration = target100 - start;
     const currentProgress = now - start;
     let percentage = Math.min(100, Math.max(0, Math.round((currentProgress / totalDuration) * 100)));
 
     if (progressBarEl) progressBarEl.style.width = `${percentage}%`;
-    if (progressPercentEl) progressPercentEl.textContent = `${percentage}%`;
+    if (progressPercentEl) {
+      if (window.isPrivacyMode) {
+        progressPercentEl.innerHTML = '<span class="paywall-tag cursor-pointer text-amber-600 font-bold" title="點擊查看解鎖條件">🔒 付費解鎖</span>';
+      } else {
+        progressPercentEl.textContent = `${percentage}%`;
+      }
+    }
   }
 
   updateCounter();

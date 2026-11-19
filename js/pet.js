@@ -166,7 +166,10 @@ function initRoamingUsagi() {
       usagiContainer.style.transition = 'none';
     }, 250);
 
-    const q = usagiQuotes[Math.floor(Math.random() * usagiQuotes.length)];
+    let q = usagiQuotes[Math.floor(Math.random() * usagiQuotes.length)];
+    if (window.isPrivacyMode) {
+      q = q.replace(/Mimi/g, '🔒付費解鎖').replace(/100 天/g, '🔒付費解鎖').replace(/100天/g, '🔒付費解鎖');
+    }
     usagiBubble.textContent = q;
     usagiBubble.classList.remove('opacity-0');
     usagiBubble.classList.add('opacity-100');
@@ -194,7 +197,10 @@ function initRoamingUsagi() {
       momongaContainer.style.transition = 'none';
     }, 250);
 
-    const q = momongaQuotes[Math.floor(Math.random() * momongaQuotes.length)];
+    let q = momongaQuotes[Math.floor(Math.random() * momongaQuotes.length)];
+    if (window.isPrivacyMode) {
+      q = q.replace(/萌萌純純大壞咪/g, '🔒付費解鎖').replace(/男朋友/g, '🔒付費解鎖').replace(/100 天/g, '🔒付費解鎖').replace(/100天/g, '🔒付費解鎖');
+    }
     momongaBubble.textContent = q;
     momongaBubble.classList.remove('opacity-0');
     momongaBubble.classList.add('opacity-100');
